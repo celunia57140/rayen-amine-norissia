@@ -542,6 +542,81 @@
         "alternate_media_position": false,
         "spacing": "small"
       }
+    },
+    "media_with_text_TJTqPD": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_rDqnaP": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "UNE PEAU ET DES CHEVEUX PLUS BEAUX, GARANTIS.",
+            "title": "LA PROMESSE NORYSIA™",
+            "content": "<p>Nous sommes convaincus que vous ressentirez la différence dès vos premières utilisations avec NORYSIA™.</p><p>C'est pourquoi nous vous offrons 30 jours pour tester votre expérience sous la douche en toute sérénité.</p><p>Si vous n'êtes pas satisfait(e), il vous suffit de contacter notre service client pour bénéficier d'un remboursement complet.</p><p>✓‎ ‎ ‎ Garantie satisfait ou remboursé 30 jours</p><p>✓‎ ‎ ‎ Support client humain et réactif</p><p></p><p>★★★★★ Excellent 4,9/5 | +13 500 clients satisfaits</p><p></p><p></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rDqnaP"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "alternate_media_position": false,
+        "spacing": "small"
+      }
+    },
+    "1779222721615f31bb": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c40612a_FCF36M": {
+          "type": "ai_gen_block_c40612a",
+          "settings": {
+            "title": "VOS QUESTIONS, RÉPONSES POINT PAR POINT",
+            "title_size_desktop": 70,
+            "question_1": "En combien de temps puis-je constater des résultats ?",
+            "answer_1": "<p>NORYSIA™ agit directement à la source du problème : l'eau utilisée chaque jour sous la douche.</p><p>En aidant à réduire le chlore, le calcaire et certaines impuretés, l'eau paraît plus douce au contact de la peau et des cheveux.</p><p>De nombreux utilisateurs remarquent une sensation de confort dès les premières utilisations : peau plus douce, cheveux plus souples et cuir chevelu moins agressé.</p>",
+            "question_2": "Est-ce compatible avec ma douche ? Est-ce facile à installer ?",
+            "answer_2": "<p>NORYSIA™ a été conçu pour s'adapter à la majorité des installations standards.</p><p>L'installation prend seulement quelques minutes : il suffit de dévisser votre ancien pommeau puis de visser NORYSIA™.</p><p>Aucun outil ni compétence particulière n'est nécessaire.</p>",
+            "question_3": "Quand faut-il remplacer le filtre ?",
+            "answer_3": "<p>La durée moyenne d'un filtre est d'environ 3 mois selon l'utilisation et la qualité de l'eau.</p><p>Le remplacement est rapide et simple : ouvrez le pommeau, retirez l'ancien filtre et placez le nouveau.</p>",
+            "question_4": "Pourquoi utiliser un pommeau filtrant ?",
+            "answer_4": "<p>L'eau de douche peut contenir du chlore, du calcaire et d'autres résidus susceptibles d'affecter la peau et les cheveux au quotidien.</p><p>NORYSIA™ aide à améliorer le confort sous la douche grâce à un système de filtration avancé conçu pour une expérience plus agréable.</p>",
+            "question_5": "Quelle est la différence avec les modèles moins chers ?",
+            "answer_5": "<p>NORYSIA™ privilégie la qualité des matériaux, le confort d'utilisation et une filtration premium.</p><p>Le design, la finition et l'expérience sous la douche ont été pensés pour offrir une sensation haut de gamme au quotidien.</p>",
+            "question_6": "Et si je ne suis pas satisfait(e) ?",
+            "answer_6": "<p>Vous pouvez essayer NORYSIA™ en toute sérénité grâce à notre garantie satisfait ou remboursé de 30 jours.</p><p>Si vous n'êtes pas convaincu(e), notre équipe support vous accompagne rapidement.</p>",
+            "question_7": "Le pommeau réduit-il la pression ?",
+            "answer_7": "<p>Non. NORYSIA™ a été conçu pour offrir une expérience confortable et agréable sous la douche tout en conservant un jet puissant et homogène.</p>",
+            "question_8": "Convient-il aux peaux sensibles et aux cheveux fragiles ?",
+            "answer_8": "<p>Oui. Beaucoup d'utilisateurs choisissent NORYSIA™ pour améliorer leur confort quotidien lorsque leur peau ou leurs cheveux semblent sensibles à l'eau dure.</p>",
+            "background_color": "#F8F8F8",
+            "title_color": "#111111",
+            "question_color": "#111111",
+            "answer_color": "#444444",
+            "accent_color": "#2F4F4F",
+            "border_color": "#DDDDDD",
+            "border_radius": 12
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c40612a_FCF36M"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -555,6 +630,8 @@
     "1779219576ca6ae4d1",
     "17792207973f9d588b",
     "image_with_text_overlay_ngtQe9",
-    "media_with_text_VeR8mg"
+    "media_with_text_VeR8mg",
+    "media_with_text_TJTqPD",
+    "1779222721615f31bb"
   ]
 }
