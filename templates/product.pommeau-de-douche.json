@@ -69,6 +69,66 @@
             "alignment": "start",
             "max_width": 500
           }
+        },
+        "collapsible_text_47XD8n": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Quelle est la durée du filtre ?",
+            "content": "<p>Chaque filtre NORYSIA™ a une durée de vie d’environ 3 mois selon l’utilisation et la qualité de l’eau.</p><p>Lors de votre commande, vous pourrez ajouter des filtres supplémentaires si nécessaire.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_qbYXQe": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Comment l'installer ?",
+            "content": "<p>En moins de 2 minutes, sans outils ni compétences particulières :</p><ol><li>Dévissez votre ancien pommeau de douche</li><li>Vissez le pommeau filtrant NORYSIA™ sur votre flexible</li><li>Profitez d’une sensation d’eau plus pure dès les premières utilisations</li></ol><p>Compatible avec la majorité des installations de douche standard.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_QAH6cb": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Technologie de Filtration NORYSIA™",
+            "content": "<p>NORYSIA™ utilise une technologie de filtration multicouche avancée conçue pour aider à réduire le chlore, le calcaire, les résidus et certaines impuretés présentes dans l’eau.</p><p><strong>1 Filtre = Environ 3 Mois d’Utilisation</strong></p><h3>1. Filtration Multicouche</h3><p>Aide à réduire les particules, résidus et impuretés présents dans l’eau afin d’améliorer l’expérience de douche au quotidien.</p><h3>2. Purification Avancée</h3><p>Conçue pour limiter certaines substances pouvant assécher la peau et affecter les cheveux.</p><h3>3. Protection Quotidienne</h3><p>Aide à préserver le confort de la peau et l’apparence naturelle des cheveux jour après jour.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_nnHPGp": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Pourquoi Filtrer Son Eau de Douche ?",
+            "content": "<p>L’eau dure peut contenir du calcaire, du chlore et d’autres résidus susceptibles d’affecter la peau et les cheveux.</p><p>Ces éléments peuvent contribuer à :</p><ul><li>une peau sèche ou inconfortable,</li><li>des sensations de tiraillement,</li><li>des cheveux ternes ou difficiles à coiffer,</li><li>des irritations du cuir chevelu,</li><li>une routine beauté moins efficace.</li></ul>",
+            "page": ""
+          }
+        },
+        "collapsible_text_xVwdkr": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Les Bienfaits Ressentis Avec NORYSIA™",
+            "content": "<p>✔ Peau plus douce et plus confortable<br/>✔ Cheveux plus brillants et plus souples<br/>✔ Sensation d’eau plus agréable<br/>✔ Moins de résidus sur la peau et les cheveux<br/>✔ Routine douche plus apaisante<br/>✔ Une expérience bien-être au quotidien</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_qnNXfk": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Livraison & Garantie",
+            "content": "<p>Votre peau et vos cheveux méritent une eau plus agréable au quotidien.</p><p>C’est pourquoi nous proposons :</p><ul><li>Livraison offerte en France</li><li>Expédition rapide sous 3 à 7 jours ouvrés</li><li>Suivi de commande inclus</li></ul><h3>Garantie 30 Jours Satisfait ou Remboursé</h3><p>Essayez NORYSIA™ pendant 30 jours en toute sérénité.</p><p>Si vous n’êtes pas satisfait(e) de votre expérience, contactez simplement notre service client et nous vous rembourserons intégralement.</p><p>📩 Contact : <a href=\"mailto:support@norysia.com\">support@norysia.com</a></p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -79,7 +139,13 @@
         "image_pmA6Em",
         "image_cPqXqb",
         "image_3cViUH",
-        "image_UJUWTc"
+        "image_UJUWTc",
+        "collapsible_text_47XD8n",
+        "collapsible_text_qbYXQe",
+        "collapsible_text_QAH6cb",
+        "collapsible_text_nnHPGp",
+        "collapsible_text_xVwdkr",
+        "collapsible_text_qnNXfk"
       ],
       "settings": {
         "full_width": true,
