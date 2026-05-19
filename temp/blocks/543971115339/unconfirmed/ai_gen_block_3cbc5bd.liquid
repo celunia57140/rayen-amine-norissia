@@ -1,6 +1,612 @@
+{% doc %}
+  @prompt
+    Crée une section Shopify complète appelée “NORYSIA filter slider”.
+    
+    OBJECTIF :
+    Créer un slider avant/après interactif montrant un filtre sale après 3 mois VS un filtre propre.
+    
+    IMPORTANT :
+    Les deux images doivent garder exactement la même taille.
+    Quand on déplace la barre, les images ne doivent jamais rétrécir ni s’agrandir.
+    Le slider doit seulement masquer/révéler l’image avec un effet clip/mask.
+    
+    STYLE :
+    - marque NORYSIA™
+    - fond vert foncé #2F4F4F
+    - accents #B1E2DD
+    - texte blanc
+    - design premium skincare/spa
+    - formes organiques discrètes en arrière-plan
+    - coins arrondis
+    - rendu mobile-first
+    
+    TITRE :
+    “LE FILTRE APRÈS 3 MOIS”
+    
+    SOUS-TITRE :
+    “Faites glisser et constatez la différence au niveau du filtre après 3 mois d’utilisation continue avec NORYSIA™.”
+    
+    SLIDER :
+    - image gauche : filtre sale
+    - image droite : filtre propre
+    - barre verticale au centre
+    - poignée ronde avec double flèche
+    - interaction tactile mobile fluide
+    
+    LABELS :
+    À gauche : “FILTRE SALE”
+    À droite : “FILTRE PROPRE”
+    
+    TECHNIQUE OBLIGATOIRE :
+    - les 2 images sont superposées dans le même container
+    - position:absolute pour les 2 images
+    - width:100%
+    - height:100%
+    - object-fit:contain
+    - object-position:center
+    - aucune image ne doit changer de taille pendant le drag
+    - utiliser clip-path ou overflow:hidden pour révéler l’image
+    - le curseur contrôle uniquement la largeur du masque
+    - hauteur mobile : 340px minimum
+    - largeur mobile : 100%
+    - aucun débordement
+    
+    DESKTOP :
+    - section large et premium
+    - slider centré
+    - filtre bien visible
+    
+    MOBILE :
+    - filtre très grand et lisible
+    - slider immersif
+    - hauteur 340px à 380px
+    - texte compact
+    - aucun bug responsive
+    
+    CODE ATTENDU :
+    Génère une section Shopify complète avec :
+    - Liquid
+    - HTML
+    - CSS
+    - JavaScript
+    - schema Shopify
+    - champs modifiables : titre, sous-titre, image filtre sale, image filtre propre, labels
+    
+    IMPORTANT :
+    Le résultat doit être stable, premium et fluide.
+    Quand je déplace la barre, seule la zone visible change, jamais la taille des filtres.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-filter-slider-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background: {{ block.settings.background_color }};
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-filter-slider-{{ ai_gen_id }}::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 400px;
+    height: 400px;
+    background: {{ block.settings.accent_color }};
+    opacity: 0.08;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .ai-filter-slider-{{ ai_gen_id }}::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 300px;
+    height: 300px;
+    background: {{ block.settings.accent_color }};
+    opacity: 0.05;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .ai-filter-slider__container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .ai-filter-slider__header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .ai-filter-slider__title-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.title_size_mobile }}px;
+    font-weight: 700;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .ai-filter-slider__subtitle-{{ ai_gen_id }} {
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.subtitle_size_mobile }}px;
+    line-height: 1.5;
+    margin: 0;
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ai-filter-slider__comparison-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-filter-slider__image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: {{ block.settings.slider_height_mobile }}px;
+    overflow: hidden;
+  }
+
+  .ai-filter-slider__image-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .ai-filter-slider__image--before-{{ ai_gen_id }} {
+    z-index: 1;
+  }
+
+  .ai-filter-slider__image--after-{{ ai_gen_id }} {
+    z-index: 2;
+    clip-path: inset(0 0 0 50%);
+  }
+
+  .ai-filter-slider__divider-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 3px;
+    height: 100%;
+    background: {{ block.settings.text_color }};
+    transform: translateX(-50%);
+    z-index: 3;
+    cursor: ew-resize;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .ai-filter-slider__handle-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background: {{ block.settings.text_color }};
+    border: 4px solid {{ block.settings.background_color }};
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: ew-resize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+
+  .ai-filter-slider__handle-{{ ai_gen_id }}:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  .ai-filter-slider__handle-{{ ai_gen_id }}::before,
+  .ai-filter-slider__handle-{{ ai_gen_id }}::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .ai-filter-slider__handle-{{ ai_gen_id }}::before {
+    border-width: 6px 8px 6px 0;
+    border-color: transparent {{ block.settings.background_color }} transparent transparent;
+    left: 10px;
+  }
+
+  .ai-filter-slider__handle-{{ ai_gen_id }}::after {
+    border-width: 6px 0 6px 8px;
+    border-color: transparent transparent transparent {{ block.settings.background_color }};
+    right: 10px;
+  }
+
+  .ai-filter-slider__labels-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 4;
+  }
+
+  .ai-filter-slider__label-{{ ai_gen_id }} {
+    position: absolute;
+    top: 20px;
+    background: {{ block.settings.text_color }};
+    color: {{ block.settings.background_color }};
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-filter-slider__label--left-{{ ai_gen_id }} {
+    left: 20px;
+  }
+
+  .ai-filter-slider__label--right-{{ ai_gen_id }} {
+    right: 20px;
+  }
+
+  .ai-filter-slider__placeholder-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-filter-slider__placeholder-{{ ai_gen_id }} svg {
+    width: 100px;
+    height: 100px;
+    opacity: 0.3;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-filter-slider-{{ ai_gen_id }} {
+      padding: 60px 40px;
+    }
+
+    .ai-filter-slider__header-{{ ai_gen_id }} {
+      margin-bottom: 48px;
+    }
+
+    .ai-filter-slider__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size_desktop }}px;
+    }
+
+    .ai-filter-slider__subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size_desktop }}px;
+    }
+
+    .ai-filter-slider__image-wrapper-{{ ai_gen_id }} {
+      height: {{ block.settings.slider_height_desktop }}px;
+    }
+
+    .ai-filter-slider__handle-{{ ai_gen_id }} {
+      width: 60px;
+      height: 60px;
+    }
+
+    .ai-filter-slider__label-{{ ai_gen_id }} {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+{% endstyle %}
+
+<filter-slider-{{ ai_gen_id }} class="ai-filter-slider-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-filter-slider__container-{{ ai_gen_id }}">
+    <div class="ai-filter-slider__header-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-filter-slider__title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+      {% if block.settings.subtitle != blank %}
+        <p class="ai-filter-slider__subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <div class="ai-filter-slider__comparison-{{ ai_gen_id }}">
+      <div class="ai-filter-slider__image-wrapper-{{ ai_gen_id }}" data-slider-container>
+        {% if block.settings.image_before %}
+          <img
+            src="{{ block.settings.image_before | image_url: width: 1400 }}"
+            alt="{{ block.settings.label_left | escape }}"
+            class="ai-filter-slider__image-{{ ai_gen_id }} ai-filter-slider__image--before-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ block.settings.image_before.width }}"
+            height="{{ block.settings.image_before.height }}"
+          >
+        {% else %}
+          <div class="ai-filter-slider__image-{{ ai_gen_id }} ai-filter-slider__image--before-{{ ai_gen_id }} ai-filter-slider__placeholder-{{ ai_gen_id }}">
+            {{ 'product-1' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+
+        {% if block.settings.image_after %}
+          <img
+            src="{{ block.settings.image_after | image_url: width: 1400 }}"
+            alt="{{ block.settings.label_right | escape }}"
+            class="ai-filter-slider__image-{{ ai_gen_id }} ai-filter-slider__image--after-{{ ai_gen_id }}"
+            data-after-image
+            loading="lazy"
+            width="{{ block.settings.image_after.width }}"
+            height="{{ block.settings.image_after.height }}"
+          >
+        {% else %}
+          <div class="ai-filter-slider__image-{{ ai_gen_id }} ai-filter-slider__image--after-{{ ai_gen_id }} ai-filter-slider__placeholder-{{ ai_gen_id }}" data-after-image>
+            {{ 'product-1' | placeholder_svg_tag }}
+          </div>
+        {% endif %}
+
+        <div class="ai-filter-slider__divider-{{ ai_gen_id }}" data-divider>
+          <div class="ai-filter-slider__handle-{{ ai_gen_id }}" data-handle></div>
+        </div>
+
+        <div class="ai-filter-slider__labels-{{ ai_gen_id }}">
+          {% if block.settings.label_left != blank %}
+            <div class="ai-filter-slider__label-{{ ai_gen_id }} ai-filter-slider__label--left-{{ ai_gen_id }}">
+              {{ block.settings.label_left }}
+            </div>
+          {% endif %}
+          {% if block.settings.label_right != blank %}
+            <div class="ai-filter-slider__label-{{ ai_gen_id }} ai-filter-slider__label--right-{{ ai_gen_id }}">
+              {{ block.settings.label_right }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</filter-slider-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class FilterSlider{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.isDragging = false;
+        this.container = null;
+        this.divider = null;
+        this.afterImage = null;
+      }
+
+      connectedCallback() {
+        this.container = this.querySelector('[data-slider-container]');
+        this.divider = this.querySelector('[data-divider]');
+        this.afterImage = this.querySelector('[data-after-image]');
+        this.handle = this.querySelector('[data-handle]');
+
+        if (!this.container || !this.divider || !this.afterImage) return;
+
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.handle.addEventListener('mousedown', this.startDrag.bind(this));
+        this.handle.addEventListener('touchstart', this.startDrag.bind(this), { passive: true });
+        
+        document.addEventListener('mousemove', this.onDrag.bind(this));
+        document.addEventListener('touchmove', this.onDrag.bind(this), { passive: false });
+        
+        document.addEventListener('mouseup', this.stopDrag.bind(this));
+        document.addEventListener('touchend', this.stopDrag.bind(this));
+      }
+
+      startDrag(e) {
+        this.isDragging = true;
+        e.preventDefault();
+      }
+
+      stopDrag() {
+        this.isDragging = false;
+      }
+
+      onDrag(e) {
+        if (!this.isDragging) return;
+
+        const rect = this.container.getBoundingClientRect();
+        const clientX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+        let x = clientX - rect.left;
+
+        x = Math.max(0, Math.min(x, rect.width));
+
+        const percentage = (x / rect.width) * 100;
+
+        this.divider.style.left = percentage + '%';
+        this.afterImage.style.clipPath = `inset(0 0 0 ${percentage}%)`;
+      }
+    }
+
+    customElements.define('filter-slider-{{ ai_gen_id }}', FilterSlider{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "NORYSIA filter slider",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "LE FILTRE APRÈS 3 MOIS"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Faites glisser et constatez la différence au niveau du filtre après 3 mois d'utilisation continue avec NORYSIA™."
+    },
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_before",
+      "label": "Image left (dirty filter)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_after",
+      "label": "Image right (clean filter)"
+    },
+    {
+      "type": "header",
+      "content": "Labels"
+    },
+    {
+      "type": "text",
+      "id": "label_left",
+      "label": "Left label",
+      "default": "FILTRE SALE"
+    },
+    {
+      "type": "text",
+      "id": "label_right",
+      "label": "Right label",
+      "default": "FILTRE PROPRE"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#2F4F4F"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent",
+      "default": "#B1E2DD"
+    },
+    {
+      "type": "header",
+      "content": "Typography"
+    },
+    {
+      "type": "range",
+      "id": "title_size_mobile",
+      "label": "Title size (mobile)",
+      "min": 18,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "title_size_desktop",
+      "label": "Title size (desktop)",
+      "min": 24,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_mobile",
+      "label": "Subtitle size (mobile)",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size_desktop",
+      "label": "Subtitle size (desktop)",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Slider dimensions"
+    },
+    {
+      "type": "range",
+      "id": "slider_height_mobile",
+      "label": "Height (mobile)",
+      "min": 280,
+      "max": 500,
+      "step": 20,
+      "unit": "px",
+      "default": 360
+    },
+    {
+      "type": "range",
+      "id": "slider_height_desktop",
+      "label": "Height (desktop)",
+      "min": 400,
+      "max": 800,
+      "step": 20,
+      "unit": "px",
+      "default": 560
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "NORYSIA filter slider"
+    }
+  ]
+}
 {% endschema %}
