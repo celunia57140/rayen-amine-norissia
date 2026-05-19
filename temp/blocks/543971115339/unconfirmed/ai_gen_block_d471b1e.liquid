@@ -1,6 +1,643 @@
+{% doc %}
+  @prompt
+    Crée une section Shopify premium interactive pour la marque NORYSIA™ spécialisée dans les pommeaux de douche filtrants.
+    
+    OBJECTIF :
+    Créer une section FAQ/témoignages avec des onglets interactifs ultra compacts sur mobile.
+    
+    IMPORTANT :
+    Le rendu MOBILE est la priorité absolue.
+    
+    ━━━━━━━━━━━━━━━
+    STYLE GÉNÉRAL
+    ━━━━━━━━━━━━━━━
+    
+    - esthétique skincare luxe
+    - design minimaliste premium
+    - style clean beauty
+    - ambiance spa haut de gamme
+    - rendu Shopify premium
+    - look moderne et épuré
+    - aucun effet dropshipping cheap
+    
+    ━━━━━━━━━━━━━━━
+    COULEURS NORYSIA
+    ━━━━━━━━━━━━━━━
+    
+    - fond section : #FFFFFF
+    - texte principal : #111111
+    - couleur accent : #B1E2DD
+    - onglet actif : #2F4F4F
+    - texte onglet actif : blanc
+    - bordures : gris très léger
+    
+    ━━━━━━━━━━━━━━━
+    TITRE
+    ━━━━━━━━━━━━━━━
+    
+    Titre centré :
+    “QUEL PROBLÈME SOUHAITEZ-VOUS RÉSOUDRE ?”
+    
+    Style :
+    - bold premium
+    - noir profond
+    - très lisible
+    - élégant
+    - espacement premium
+    
+    ━━━━━━━━━━━━━━━
+    ONGLETS
+    ━━━━━━━━━━━━━━━
+    
+    Créer les onglets suivants :
+    
+    - ECZÉMA
+    - ACNÉ
+    - PSORIASIS
+    - PEAU SÈCHE
+    - URTICAIRE
+    - DÉMANGEAISONS
+    - BOUTONS
+    - PELLICULES
+    - CHEVEUX FINS
+    - CHEVEUX SECS
+    - CHEVEUX GRAS
+    - FRISOTTIS
+    
+    ━━━━━━━━━━━━━━━
+    IMPORTANT MOBILE
+    ━━━━━━━━━━━━━━━
+    
+    SUR MOBILE :
+    Les onglets doivent être BEAUCOUP PLUS PETITS et COMPACTS.
+    
+    OBLIGATOIRE :
+    - tous les onglets doivent tenir sur environ 3 lignes MAXIMUM
+    - éviter une énorme hauteur
+    - éviter les gros boutons
+    - section compacte
+    - gain de place vertical
+    
+    STYLE MOBILE EXACT :
+    
+    - font-size : 11px
+    - padding vertical : 7px
+    - padding horizontal : 10px
+    - border-radius : 10px
+    - gap entre boutons : 6px
+    - hauteur réduite
+    - boutons plus fins
+    - texte centré
+    - apparence premium moderne
+    
+    MISE EN PAGE MOBILE :
+    - flex-wrap activé
+    - alignement centré
+    - largeur automatique
+    - aucun scroll horizontal
+    - aucune coupure étrange
+    - responsive parfait
+    
+    ━━━━━━━━━━━━━━━
+    DESKTOP
+    ━━━━━━━━━━━━━━━
+    
+    SUR DESKTOP :
+    - conserver un rendu premium plus spacieux
+    - onglets élégants
+    - centrés
+    - espacement harmonieux
+    
+    ━━━━━━━━━━━━━━━
+    COMPORTEMENT
+    ━━━━━━━━━━━━━━━
+    
+    Quand un onglet est cliqué :
+    - fond devient #2F4F4F
+    - texte blanc
+    - transition fluide
+    - animation fade douce
+    - changement automatique du témoignage
+    
+    ━━━━━━━━━━━━━━━
+    ZONE TÉMOIGNAGE
+    ━━━━━━━━━━━━━━━
+    
+    Sous les onglets afficher :
+    - un titre bold
+    - un paragraphe client
+    - prénom + initiale
+    - bouton CTA
+    
+    ━━━━━━━━━━━━━━━
+    BOUTON CTA
+    ━━━━━━━━━━━━━━━
+    
+    Texte :
+    “FILTRER MON EAU”
+    
+    IMPORTANT :
+    Le bouton doit automatiquement reprendre EXACTEMENT le même style que le bouton “Ajouter au panier” du thème Shopify :
+    - même couleur
+    - même hover
+    - même radius
+    - même ombre
+    - même hauteur
+    - même transition
+    - même typo
+    
+    ━━━━━━━━━━━━━━━
+    CONTENU TÉMOIGNAGES
+    ━━━━━━━━━━━━━━━
+    
+    Créer des témoignages skincare réalistes et premium pour chaque onglet.
+    
+    Style :
+    - crédible
+    - émotionnel
+    - naturel
+    - haut de gamme
+    - centré conversion
+    
+    ━━━━━━━━━━━━━━━
+    TECHNIQUE
+    ━━━━━━━━━━━━━━━
+    
+    Créer :
+    - HTML
+    - CSS
+    - JavaScript
+    - Shopify compatible
+    - responsive mobile-first
+    - media queries optimisées
+    - performance fluide
+    - aucun bug mobile
+    
+    IMPORTANT :
+    Le résultat final doit être :
+    - compact sur mobile
+    - élégant
+    - ultra moderne
+    - conversion-focused
+    - parfaitement lisible
+    - très premium
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-norysia-faq-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.section_background }};
+    padding: 60px 20px;
+  }
+
+  .ai-norysia-faq__container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-norysia-faq__title-{{ ai_gen_id }} {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 40px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+
+  .ai-norysia-faq__tabs-{{ ai_gen_id }} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+    margin-bottom: 40px;
+  }
+
+  .ai-norysia-faq__tab-{{ ai_gen_id }} {
+    background-color: {{ block.settings.tab_background }};
+    color: {{ block.settings.tab_text_color }};
+    border: 1px solid {{ block.settings.tab_border_color }};
+    border-radius: 10px;
+    padding: 7px 10px;
+    font-size: 11px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .ai-norysia-faq__tab-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.tab_hover_background }};
+  }
+
+  .ai-norysia-faq__tab-{{ ai_gen_id }}.active {
+    background-color: {{ block.settings.tab_active_background }};
+    color: {{ block.settings.tab_active_text_color }};
+    border-color: {{ block.settings.tab_active_background }};
+  }
+
+  .ai-norysia-faq__content-{{ ai_gen_id }} {
+    background-color: {{ block.settings.content_background }};
+    border-radius: {{ block.settings.content_border_radius }}px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  }
+
+  .ai-norysia-faq__testimonial-{{ ai_gen_id }} {
+    display: none;
+    opacity: 0;
+    animation: ai-norysia-fade-in-{{ ai_gen_id }} 0.5s ease forwards;
+  }
+
+  .ai-norysia-faq__testimonial-{{ ai_gen_id }}.active {
+    display: block;
+  }
+
+  @keyframes ai-norysia-fade-in-{{ ai_gen_id }} {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .ai-norysia-faq__testimonial-title-{{ ai_gen_id }} {
+    font-size: 20px;
+    font-weight: 700;
+    color: {{ block.settings.testimonial_title_color }};
+    margin: 0 0 20px;
+  }
+
+  .ai-norysia-faq__testimonial-text-{{ ai_gen_id }} {
+    font-size: 16px;
+    line-height: 1.6;
+    color: {{ block.settings.testimonial_text_color }};
+    margin: 0 0 20px;
+  }
+
+  .ai-norysia-faq__testimonial-author-{{ ai_gen_id }} {
+    font-size: 14px;
+    font-weight: 600;
+    color: {{ block.settings.testimonial_author_color }};
+    margin: 0 0 30px;
+  }
+
+  .ai-norysia-faq__cta-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 16px 40px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 60px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .ai-norysia-faq__cta-{{ ai_gen_id }}:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-norysia-faq-{{ ai_gen_id }} {
+      padding: 80px 40px;
+    }
+
+    .ai-norysia-faq__title-{{ ai_gen_id }} {
+      font-size: 32px;
+      margin-bottom: 50px;
+    }
+
+    .ai-norysia-faq__tabs-{{ ai_gen_id }} {
+      gap: 12px;
+      margin-bottom: 50px;
+    }
+
+    .ai-norysia-faq__tab-{{ ai_gen_id }} {
+      padding: 12px 20px;
+      font-size: 14px;
+      border-radius: 12px;
+    }
+
+    .ai-norysia-faq__content-{{ ai_gen_id }} {
+      padding: 50px 60px;
+    }
+
+    .ai-norysia-faq__testimonial-title-{{ ai_gen_id }} {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
+
+    .ai-norysia-faq__testimonial-text-{{ ai_gen_id }} {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .ai-norysia-faq__testimonial-author-{{ ai_gen_id }} {
+      font-size: 16px;
+      margin-bottom: 35px;
+    }
+
+    .ai-norysia-faq__cta-{{ ai_gen_id }} {
+      padding: 18px 50px;
+      font-size: 15px;
+    }
+  }
+{% endstyle %}
+
+<norysia-faq-{{ ai_gen_id }} class="ai-norysia-faq-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-norysia-faq__container-{{ ai_gen_id }}">
+    <h2 class="ai-norysia-faq__title-{{ ai_gen_id }}">{{ block.settings.main_title }}</h2>
+
+    <div class="ai-norysia-faq__tabs-{{ ai_gen_id }}">
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }} active" data-tab="eczema">ECZÉMA</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="acne">ACNÉ</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="psoriasis">PSORIASIS</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="peau-seche">PEAU SÈCHE</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="urticaire">URTICAIRE</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="demangeaisons">DÉMANGEAISONS</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="boutons">BOUTONS</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="pellicules">PELLICULES</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="cheveux-fins">CHEVEUX FINS</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="cheveux-secs">CHEVEUX SECS</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="cheveux-gras">CHEVEUX GRAS</button>
+      <button class="ai-norysia-faq__tab-{{ ai_gen_id }}" data-tab="frisottis">FRISOTTIS</button>
+    </div>
+
+    <div class="ai-norysia-faq__content-{{ ai_gen_id }}">
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }} active" data-content="eczema">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Mon eczéma a enfin disparu</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">Après des années de crises d'eczéma insupportables, j'ai enfin trouvé la solution. Depuis que j'utilise NORYSIA™, ma peau est apaisée, les rougeurs ont disparu et je n'ai plus ces démangeaisons nocturnes qui me gâchaient la vie. C'est un vrai soulagement.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Sophie L.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="acne">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Fini l'acné dans le dos</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">J'avais de l'acné persistante dans le dos depuis l'adolescence. Rien ne fonctionnait vraiment. Depuis que je filtre mon eau avec NORYSIA™, ma peau est nette, les boutons ont disparu et je peux enfin porter ce que je veux sans complexe.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Léa M.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="psoriasis">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Mon psoriasis s'est calmé</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">Vivre avec du psoriasis était un combat quotidien. Les plaques rouges, les squames, la gêne permanente... NORYSIA™ a vraiment changé ma vie. Ma peau est plus douce, les plaques se sont estompées et je me sens enfin bien dans mon corps.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Marc D.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="peau-seche">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Ma peau est enfin hydratée</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">J'avais la peau tellement sèche que je devais me crémer plusieurs fois par jour. Depuis NORYSIA™, ma peau reste hydratée naturellement. Elle est douce, souple et je n'ai plus cette sensation de tiraillement après la douche.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Claire B.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="urticaire">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Plus de crises d'urticaire</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">Les crises d'urticaire me rendaient folle. Plaques rouges, démangeaisons intenses, impossible de prévoir quand ça allait arriver. Depuis que j'ai installé NORYSIA™, je n'ai plus eu une seule crise. Ma peau est apaisée et je vis enfin sereinement.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Emma R.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="demangeaisons">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Enfin libérée des démangeaisons</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">Ces démangeaisons constantes me gâchaient la vie, surtout la nuit. Je me réveillais en me grattant sans même m'en rendre compte. NORYSIA™ a tout changé. Ma peau est apaisée, je dors enfin paisiblement et je n'ai plus ces irritations permanentes.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Julie T.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="boutons">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Une peau nette et lumineuse</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">J'avais toujours des petits boutons qui apparaissaient, surtout sur le visage et le décolleté. Depuis que j'utilise NORYSIA™, ma peau est nette, lumineuse et je n'ai plus ces imperfections qui me complexaient. C'est un vrai bonheur.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Camille P.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="pellicules">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Adieu les pellicules</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">Les pellicules me gênaient énormément, surtout sur les vêtements sombres. J'ai tout essayé sans succès. NORYSIA™ a été la solution miracle. Mon cuir chevelu est sain, les pellicules ont disparu et mes cheveux sont magnifiques.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Thomas V.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="cheveux-fins">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Mes cheveux ont du volume</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">Mes cheveux étaient tellement fins et plats que je n'arrivais jamais à leur donner du volume. Depuis NORYSIA™, ils sont plus épais, plus forts et ont enfin du corps. Je n'en reviens toujours pas de la différence.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Laura K.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="cheveux-secs">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Cheveux doux et brillants</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">Mes cheveux étaient secs, cassants et ternes. Je devais utiliser des tonnes de masques pour les hydrater. Avec NORYSIA™, ils sont naturellement doux, brillants et en pleine santé. C'est comme si j'avais fait un soin en salon à chaque douche.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Sarah N.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="cheveux-gras">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Fini les cheveux gras</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">Je devais me laver les cheveux tous les jours tellement ils regraissaient vite. C'était épuisant. Depuis NORYSIA™, mon cuir chevelu est équilibré, mes cheveux restent frais plus longtemps et je peux enfin espacer mes shampoings.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Marine F.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+
+      <div class="ai-norysia-faq__testimonial-{{ ai_gen_id }}" data-content="frisottis">
+        <h3 class="ai-norysia-faq__testimonial-title-{{ ai_gen_id }}">Des cheveux lisses et disciplinés</h3>
+        <p class="ai-norysia-faq__testimonial-text-{{ ai_gen_id }}">Les frisottis me rendaient folle, surtout par temps humide. Mes cheveux étaient incontrôlables. NORYSIA™ a tout changé. Mes cheveux sont lisses, disciplinés et brillants. Je n'ai plus besoin de lisseur ni de produits coiffants.</p>
+        <p class="ai-norysia-faq__testimonial-author-{{ ai_gen_id }}">Anaïs G.</p>
+        <a href="{{ block.settings.cta_link }}" class="ai-norysia-faq__cta-{{ ai_gen_id }}">{{ block.settings.cta_text }}</a>
+      </div>
+    </div>
+  </div>
+</norysia-faq-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class NorysiaFaq{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.tabs = this.querySelectorAll('.ai-norysia-faq__tab-{{ ai_gen_id }}');
+        this.contents = this.querySelectorAll('.ai-norysia-faq__testimonial-{{ ai_gen_id }}');
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.tabs.forEach((tab) => {
+          tab.addEventListener('click', () => {
+            const targetTab = tab.getAttribute('data-tab');
+            
+            this.tabs.forEach((t) => t.classList.remove('active'));
+            tab.classList.add('active');
+            
+            this.contents.forEach((content) => {
+              content.classList.remove('active');
+              if (content.getAttribute('data-content') === targetTab) {
+                content.classList.add('active');
+              }
+            });
+          });
+        });
+      }
+    }
+
+    customElements.define('norysia-faq-{{ ai_gen_id }}', NorysiaFaq{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "NORYSIA FAQ témoignages",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Titre principal"
+    },
+    {
+      "type": "text",
+      "id": "main_title",
+      "label": "Titre",
+      "default": "QUEL PROBLÈME SOUHAITEZ-VOUS RÉSOUDRE ?"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Couleur du titre",
+      "default": "#111111"
+    },
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Fond de section",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Onglets"
+    },
+    {
+      "type": "color",
+      "id": "tab_background",
+      "label": "Fond",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "tab_text_color",
+      "label": "Texte",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "tab_border_color",
+      "label": "Bordure",
+      "default": "#E5E5E5"
+    },
+    {
+      "type": "color",
+      "id": "tab_hover_background",
+      "label": "Fond au survol",
+      "default": "#F5F5F5"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_background",
+      "label": "Fond actif",
+      "default": "#2F4F4F"
+    },
+    {
+      "type": "color",
+      "id": "tab_active_text_color",
+      "label": "Texte actif",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "header",
+      "content": "Zone témoignage"
+    },
+    {
+      "type": "color",
+      "id": "content_background",
+      "label": "Fond",
+      "default": "#FAFAFA"
+    },
+    {
+      "type": "range",
+      "id": "content_border_radius",
+      "label": "Arrondi",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "testimonial_title_color",
+      "label": "Couleur titre",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "testimonial_text_color",
+      "label": "Couleur texte",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "testimonial_author_color",
+      "label": "Couleur auteur",
+      "default": "#666666"
+    },
+    {
+      "type": "header",
+      "content": "Bouton CTA"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "Texte du bouton",
+      "default": "FILTRER MON EAU"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "Lien du bouton"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "NORYSIA FAQ témoignages"
+    }
+  ]
+}
 {% endschema %}
