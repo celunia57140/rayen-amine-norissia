@@ -553,7 +553,7 @@
             "image": "shopify://shop_images/Diseno_sin_titulo_-_2025-06-04T235317.208_2.png",
             "media_width": 50,
             "media_position": "start",
-            "text_position": "place-self-start text-start",
+            "text_position": "place-self-center-start text-start",
             "icon": "none",
             "icon_width": 48,
             "subheading": "UNE PEAU ET DES CHEVEUX PLUS BEAUX, GARANTIS.",
