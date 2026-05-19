@@ -31,12 +31,55 @@
             "alignment": "center",
             "max_width": 500
           }
+        },
+        "liquid_yQE6jt": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"stock-alert\" id=\"stock-alert\">\n  <span class=\"blinking-dot\"></span>\n  <span>Disponible: <strong id=\"stock-count\">3 Restants </strong></span>\n</div>\n\n<style>\n  .stock-alert {\n    display: flex;\n    align-items: center;\n    background-color: #ffebeb;\n    border: 2px solid red;\n    color: red;\n    font-weight: bold;\n    padding: 5px 10px;\n    border-radius: 4px;\n    font-size: 14px;\n    width: fit-content;\n  }\n\n  .blinking-dot {\n    width: 8px;\n    height: 8px;\n    background-color: red;\n    border-radius: 50%;\n    margin-right: 6px;\n    animation: blink 1s infinite;\n  }\n\n  @keyframes blink {\n    0% { opacity: 1; }\n    50% { opacity: 0; }\n    100% { opacity: 1; }\n  }\n</style>\n\n<script>\n  setTimeout(function() {\n    document.getElementById(\"stock-count\").innerHTML = \"2 Restants\";\n  }, 60000); // 60000ms = 1 minut\n</script>"
+          }
+        },
+        "image_pmA6Em": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_9_mai_2026_13_34_40.png",
+            "alignment": "start",
+            "max_width": 500
+          }
+        },
+        "image_cPqXqb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_9_mai_2026_13_44_08.png",
+            "alignment": "start",
+            "max_width": 500
+          }
+        },
+        "image_3cViUH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_9_mai_2026_13_44_59.png",
+            "alignment": "start",
+            "max_width": 500
+          }
+        },
+        "image_UJUWTc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_9_mai_2026_13_53_35.png",
+            "alignment": "start",
+            "max_width": 500
+          }
         }
       },
       "block_order": [
         "liquid_9LrGQp",
         "title_GxmKc3",
-        "image_acHWDJ"
+        "image_acHWDJ",
+        "liquid_yQE6jt",
+        "image_pmA6Em",
+        "image_cPqXqb",
+        "image_3cViUH",
+        "image_UJUWTc"
       ],
       "settings": {
         "full_width": true,
