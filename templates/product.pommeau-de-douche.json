@@ -514,6 +514,7 @@
         "image_X6tY3G": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/1b3c22a00d444f16a110f8c6a746091a.HD-1080p-4.8Mbps-48362274-ezgif.com-video-to-gif-converter.gif",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-start text-start",
@@ -549,6 +550,7 @@
         "image_rDqnaP": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/Diseno_sin_titulo_-_2025-06-04T235317.208_2.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-start text-start",
