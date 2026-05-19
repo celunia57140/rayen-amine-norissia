@@ -450,6 +450,12 @@
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Me prévenir lorsque ma commande est expédiée*"
+      },
+      "shipping": {
+        "delivery_title": "Étape 2 : Veuillez saisir votre adresse de livraison"
+      },
+      "payment": {
+        "title": "Étape 3 : Procédez au paiement sécurisé"
       }
     }
   }
