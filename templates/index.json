@@ -11,32 +11,6 @@
   "sections": {
     "image_with_text_overlay_Q7HFPm": {
       "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_m8TMn6": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_nDn6zP": {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text overlay",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_YkN963": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_m8TMn6",
-        "heading_nDn6zP",
-        "richtext_YkN963"
-      ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
@@ -48,7 +22,35 @@
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 0
+      }
+    },
+    "featured_collection_VC6nhr": {
+      "type": "featured-collection",
+      "name": "Featured collection",
+      "settings": {
+        "collection": "",
+        "products": [
+          "norysia™-le-pommeau-filtrant-qui-protege-votre-peau-vos-cheveux"
+        ],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Featured collection",
+        "content": "",
+        "link_url": "",
+        "link_text": "View all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     },
     "faq": {
@@ -106,6 +108,7 @@
   },
   "order": [
     "image_with_text_overlay_Q7HFPm",
+    "featured_collection_VC6nhr",
     "faq"
   ]
 }
