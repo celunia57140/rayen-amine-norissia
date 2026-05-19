@@ -316,11 +316,28 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "scrolling_text_GyYxfc": {
+      "type": "scrolling-text",
+      "name": "Scrolling text",
+      "settings": {
+        "full_width": true,
+        "text": "RÉDUIT LA CHUTE DES CHEVEUX ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ APAISSE LES DÉMANGEAISONS ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ RÉDUIT LES IRRITATIONS‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ HYDRATE LA PEAU‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ RENFORCE LES CHEVEUX‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ RÉDUIT LA SÉCHERESSE",
+        "text_size": "xsmall",
+        "text_style": "fill",
+        "scrolling_mode": "auto",
+        "scrolling_speed": 10,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "text_gradient": ""
+      }
     }
   },
   "order": [
     "main",
     "multi_column_qp98LU",
-    "multi_column_xnj4pk"
+    "multi_column_xnj4pk",
+    "scrolling_text_GyYxfc"
   ]
 }
