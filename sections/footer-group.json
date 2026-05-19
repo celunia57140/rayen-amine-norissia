@@ -42,8 +42,8 @@
         "text": {
           "type": "text",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
+            "title": "Service client : support@norysia.com",
+            "content": "<h6><strong>Horaires d'ouverture</strong></h6><p><br/>Lundi – vendredi: 9:00 – 12:00 | 13:00 – 18:00<br/><br/>Samedi et dimanche: 10:00 – 12:00</p>",
             "enable_follow_on_shop": true
           }
         }
