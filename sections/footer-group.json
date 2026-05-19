@@ -19,14 +19,22 @@
           "settings": {
             "image_width": 150,
             "heading_size": "h3",
-            "title": "Sign up for new stories and personal offers",
-            "content": ""
+            "title": "Inscrivez-vous à notre rituel",
+            "content": "<p>Inscrivez-vous avec votre adresse e-mail pour recevoir des actualités et des offres exclusives.</p>"
           }
         },
         "links": {
           "type": "links",
           "settings": {
             "menu": "footer",
+            "show_menu_title": true,
+            "menu_title": ""
+          }
+        },
+        "links_xDPzWW": {
+          "type": "links",
+          "settings": {
+            "menu": "besoin-daide",
             "show_menu_title": true,
             "menu_title": ""
           }
@@ -43,6 +51,7 @@
       "block_order": [
         "newsletter",
         "links",
+        "links_xDPzWW",
         "text"
       ],
       "custom_css": [
