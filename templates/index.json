@@ -97,63 +97,143 @@
         "product_card_text_color": ""
       }
     },
-    "faq": {
-      "type": "faq",
+    "multi_column_6Gk74d": {
+      "type": "multi-column",
       "blocks": {
-        "166442457738b23caf-0": {
+        "item_wJdxDr": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
-            "content": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+            "video": "shopify://files/videos/59a88d72192742a0a507596d5580ef66.HD-1080p-2.5Mbps-83758308.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         },
-        "166442457738b23caf-1": {
+        "item_K736dK": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
-            "content": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+            "video": "shopify://files/videos/640e982360af48bf88f53b2695063dd2.HD-1080p-2.5Mbps-83758310.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         },
-        "166442457738b23caf-2": {
+        "item_AJkqW7": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
-            "content": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+            "video": "shopify://files/videos/99aca7828c8c42828b6fa3ca9864b9ee.HD-1080p-2.5Mbps-83758309.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_yDdaDC": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/588f0f308b51472ebd2e43266456b736.HD-1080p-2.5Mbps-83758312.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_6Ywkg4": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/9def01b4c6354678bd53b69ed21294bf.HD-1080p-2.5Mbps-83758311.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
           }
         }
       },
       "block_order": [
-        "166442457738b23caf-0",
-        "166442457738b23caf-1",
-        "166442457738b23caf-2"
+        "item_wJdxDr",
+        "item_K736dK",
+        "item_AJkqW7",
+        "item_yDdaDC",
+        "item_6Ywkg4"
       ],
+      "name": "Multi-column",
       "settings": {
-        "full_width": false,
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
         "subheading": "",
-        "title": "FAQ",
-        "content": "<p>Use this text to share information about your product or shipping policies.</p>",
-        "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "#ffffff",
+        "title": "PLUS DE 100.000 FEMMES ONT TRANSFORMÉ LEUR PEAU & LEURS CHEVEUX",
+        "content": "",
+        "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
+        "text_color": ""
       }
+    },
+    "blocks_bw6gyH": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_c40612a_ezagxB": {
+          "type": "ai_gen_block_c40612a",
+          "settings": {
+            "title": "VOS QUESTIONS, RÉPONSES POINT PAR POINT",
+            "title_size_desktop": 70,
+            "question_1": "En combien de temps puis-je constater des résultats ?",
+            "answer_1": "<p>NORYSIA™ agit directement à la source du problème : l'eau utilisée chaque jour sous la douche.</p><p>En aidant à réduire le chlore, le calcaire et certaines impuretés, l'eau paraît plus douce au contact de la peau et des cheveux.</p><p>De nombreux utilisateurs remarquent une sensation de confort dès les premières utilisations : peau plus douce, cheveux plus souples et cuir chevelu moins agressé.</p>",
+            "question_2": "Est-ce compatible avec ma douche ? Est-ce facile à installer ?",
+            "answer_2": "<p>NORYSIA™ a été conçu pour s'adapter à la majorité des installations standards.</p><p>L'installation prend seulement quelques minutes : il suffit de dévisser votre ancien pommeau puis de visser NORYSIA™.</p><p>Aucun outil ni compétence particulière n'est nécessaire.</p>",
+            "question_3": "Quand faut-il remplacer le filtre ?",
+            "answer_3": "<p>La durée moyenne d'un filtre est d'environ 3 mois selon l'utilisation et la qualité de l'eau.</p><p>Le remplacement est rapide et simple : ouvrez le pommeau, retirez l'ancien filtre et placez le nouveau.</p>",
+            "question_4": "Pourquoi utiliser un pommeau filtrant ?",
+            "answer_4": "<p>L'eau de douche peut contenir du chlore, du calcaire et d'autres résidus susceptibles d'affecter la peau et les cheveux au quotidien.</p><p>NORYSIA™ aide à améliorer le confort sous la douche grâce à un système de filtration avancé conçu pour une expérience plus agréable.</p>",
+            "question_5": "Quelle est la différence avec les modèles moins chers ?",
+            "answer_5": "<p>NORYSIA™ privilégie la qualité des matériaux, le confort d'utilisation et une filtration premium.</p><p>Le design, la finition et l'expérience sous la douche ont été pensés pour offrir une sensation haut de gamme au quotidien.</p>",
+            "question_6": "Et si je ne suis pas satisfait(e) ?",
+            "answer_6": "<p>Vous pouvez essayer NORYSIA™ en toute sérénité grâce à notre garantie satisfait ou remboursé de 30 jours.</p><p>Si vous n'êtes pas convaincu(e), notre équipe support vous accompagne rapidement.</p>",
+            "question_7": "Le pommeau réduit-il la pression ?",
+            "answer_7": "<p>Non. NORYSIA™ a été conçu pour offrir une expérience confortable et agréable sous la douche tout en conservant un jet puissant et homogène.</p>",
+            "question_8": "Convient-il aux peaux sensibles et aux cheveux fragiles ?",
+            "answer_8": "<p>Oui. Beaucoup d'utilisateurs choisissent NORYSIA™ pour améliorer leur confort quotidien lorsque leur peau ou leurs cheveux semblent sensibles à l'eau dure.</p>",
+            "background_color": "#ffffff",
+            "title_color": "#111111",
+            "question_color": "#111111",
+            "answer_color": "#444444",
+            "accent_color": "#2F4F4F",
+            "border_color": "#DDDDDD",
+            "border_radius": 12
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_c40612a_ezagxB"
+      ],
+      "name": "FAQ premium NORYSIA",
+      "settings": {}
     }
   },
   "order": [
     "image_with_text_overlay_Q7HFPm",
     "custom_liquid_TfHxBJ",
     "featured_collection_VC6nhr",
-    "faq"
+    "multi_column_6Gk74d",
+    "blocks_bw6gyH"
   ]
 }
