@@ -480,6 +480,37 @@
         "ai_gen_block_df7e186_AzNaY7"
       ],
       "settings": {}
+    },
+    "17792207973f9d588b": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_3cbc5bd_EHpiif": {
+          "type": "ai_gen_block_3cbc5bd",
+          "settings": {
+            "title": "LE FILTRE APRÈS 3 MOIS",
+            "subtitle": "Faites glisser et constatez la différence au niveau du filtre après 3 mois d'utilisation continue avec NORYSIA™.",
+            "image_before": "shopify://shop_images/gempages_561627211774297080-cc7e6a46-604e-4a11-8be3-34a06339b19e_1b41d3bc-c0a1-4088-9797-7b2cda756dd6.png",
+            "image_after": "shopify://shop_images/gempages_561627211774297080-9cd53443-f16c-4efb-af09-24feff01a229_1_dfe46ec8-9eb1-4348-ab96-2f031e2076e2.webp",
+            "label_left": "FILTRE SALE",
+            "label_right": "FILTRE PROPRE",
+            "background_color": "#2F4F4F",
+            "text_color": "#FFFFFF",
+            "accent_color": "#B1E2DD",
+            "title_size_mobile": 24,
+            "title_size_desktop": 36,
+            "subtitle_size_mobile": 14,
+            "subtitle_size_desktop": 16,
+            "slider_height_mobile": 360,
+            "slider_height_desktop": 560,
+            "border_radius": 24
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_3cbc5bd_EHpiif"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -491,6 +522,7 @@
     "image_with_text_overlay_xUfxNA",
     "multi_column_b7p3KX",
     "1779219576ca6ae4d1",
-    "1779220080145d22c3"
+    "1779220080145d22c3",
+    "17792207973f9d588b"
   ]
 }
