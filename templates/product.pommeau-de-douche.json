@@ -164,9 +164,163 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
+    },
+    "multi_column_qp98LU": {
+      "type": "multi-column",
+      "blocks": {
+        "item_cYzDT9": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/59a88d72192742a0a507596d5580ef66.HD-1080p-2.5Mbps-83758308.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_NmVBfA": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/640e982360af48bf88f53b2695063dd2.HD-1080p-2.5Mbps-83758310.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_rFVDTN": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/99aca7828c8c42828b6fa3ca9864b9ee.HD-1080p-2.5Mbps-83758309.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_YHFVxz": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/588f0f308b51472ebd2e43266456b736.HD-1080p-2.5Mbps-83758312.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_jwdP8e": {
+          "type": "item",
+          "settings": {
+            "video": "shopify://files/videos/9def01b4c6354678bd53b69ed21294bf.HD-1080p-2.5Mbps-83758311.mp4",
+            "column_size": "3",
+            "title": "",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_cYzDT9",
+        "item_NmVBfA",
+        "item_rFVDTN",
+        "item_YHFVxz",
+        "item_jwdP8e"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "PLUS DE 100.000 FEMMES ONT TRANSFORMÉ LEUR PEAU & LEURS CHEVEUX",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "multi_column_xnj4pk": {
+      "type": "multi-column",
+      "blocks": {
+        "item_Kt9mLz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Gifs_Landing_776a8548-7949-4a47-a86d-6edc9b54ad5a.gif",
+            "column_size": "3",
+            "title": "1. RETIREZ VOTRE ANCIEN POMMEAU",
+            "heading_tag": "h4",
+            "content": "<p>Dévissez simplement votre ancien pommeau de douche.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Lh9URy": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Gifs_Landing_1_8368cdb6-b593-40a9-95ac-8ea1b0aea910.gif",
+            "column_size": "3",
+            "title": "2. INSTALLEZ NORYSIA™",
+            "heading_tag": "h4",
+            "content": "<p>Vissez le pommeau filtrant NORYSIA™ sur votre flexible en quelques secondes.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_hipxaC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Gifs_Landing_2_1_ff9ab85c-9f72-4305-bf00-a4a663a5e992.gif",
+            "column_size": "3",
+            "title": "3. PROFITEZ D'UNE EAU PLUS PURE",
+            "heading_tag": "h4",
+            "content": "<p>Choisissez votre mode préféré et profitez d'une douche plus douce.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_Kt9mLz",
+        "item_Lh9URy",
+        "item_hipxaC"
+      ],
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "UNE MEILLEURE PEAU ET DE PLUS BEAUX CHEVEUX EN 3 ÉTAPES SIMPLES",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "multi_column_qp98LU",
+    "multi_column_xnj4pk"
   ]
 }
