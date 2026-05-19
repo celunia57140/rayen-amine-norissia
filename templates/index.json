@@ -11,18 +11,49 @@
   "sections": {
     "image_with_text_overlay_Q7HFPm": {
       "type": "image-with-text-overlay",
+      "blocks": {
+        "heading_Atw9rY": {
+          "type": "heading",
+          "settings": {
+            "text": "Une peau et des cheveux en bonne santé commencent par une eau propre",
+            "heading_tag": "h2"
+          }
+        },
+        "richtext_RBxWkC": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Une meilleure peau et de plus beaux cheveux garantis</p>"
+          }
+        },
+        "button_xBRFrE": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Essayez-le sans risque pendant 30 jours",
+            "url": "",
+            "background": "#ffffff",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Atw9rY",
+        "richtext_RBxWkC",
+        "button_xBRFrE"
+      ],
       "name": "Image with text overlay",
       "settings": {
         "full_width": true,
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "sm",
-        "image": "shopify://shop_images/Diseno_sin_titulo_-_2025-06-04T235317.208_2.png",
+        "image": "shopify://shop_images/hf_20260519_213827_03eabf2e-be56-41b2-bee2-db2a62a25935.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 0
+        "overlay_opacity": 50
       }
     },
     "featured_collection_VC6nhr": {
