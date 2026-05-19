@@ -12,77 +12,52 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "vendor": {
-          "type": "vendor",
-          "settings": {}
+        "liquid_9LrGQp": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  .trustpilot-stars-wrapper {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n    font-family: Arial, sans-serif;\n  }\n\n  .trustpilot-stars {\n    display: flex;\n    gap: 2px;\n  }\n\n  .trustpilot-star {\n    background-color: #00b67a;\n    width: 20px;\n    height: 20px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    border-radius: 2px;\n  }\n\n  .trustpilot-star svg {\n    width: 14px;\n    height: 14px;\n    fill: #fff;\n  }\n\n  .trustpilot-rating-text {\n    font-size: 13px;\n    color: #000;\n  }\n\n  .trustpilot-rating-text strong {\n    font-weight: 600;\n  }\n</style>\n\n<div class=\"trustpilot-stars-wrapper\">\n  <div class=\"trustpilot-stars\">\n    {% for i in (1..5) %}\n      <div class=\"trustpilot-star\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\">\n          <path d=\"M256 394.7L99.6 480l29.9-174.3L13.4 190.6 190.8 162 256 0l65.2 162 177.4 28.6-116.1 115.1 29.9 174.3z\"/>\n        </svg>\n      </div>\n    {% endfor %}\n  </div>\n\n  <div class=\"trustpilot-rating-text\">\n     <strong>Noté 4.8/5</strong> |  par +1000 Clientes !\n  </div>\n</div>"
+          }
         },
-        "title": {
+        "title_GxmKc3": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "heading_tag": "h2"
+          }
         },
-        "badges": {
-          "type": "badges",
-          "settings": {}
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "rating": {
-          "type": "rating",
-          "settings": {}
-        },
-        "payment_terms": {
-          "type": "payment_terms",
-          "settings": {}
-        },
-        "separator": {
-          "type": "separator",
-          "settings": {}
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {}
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {}
-        },
-        "pickup_availability": {
-          "type": "pickup_availability",
-          "settings": {}
+        "image_acHWDJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_9_mai_2026_13_33_34.png",
+            "alignment": "center",
+            "max_width": 500
+          }
         }
       },
       "block_order": [
-        "vendor",
-        "title",
-        "badges",
-        "price",
-        "rating",
-        "payment_terms",
-        "separator",
-        "description",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons"
+        "liquid_9LrGQp",
+        "title_GxmKc3",
+        "image_acHWDJ"
       ],
-      "settings": {}
-    },
-    "related-products": {
-      "type": "related-products",
-      "settings": {}
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
     }
   },
   "order": [
-    "main",
-    "related-products"
+    "main"
   ]
 }

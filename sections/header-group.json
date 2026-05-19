@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "Header group",
@@ -5,43 +14,79 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "message_4A7kKT": {
+          "type": "message",
+          "settings": {
+            "text": "SOLDES DE PÂQUES : JUSQU’À –50 %",
+            "url": ""
+          }
+        },
+        "message_FBMJPm": {
+          "type": "message",
+          "settings": {
+            "text": "GARANTIE DE SATISFACTION DE 30 JOURS OU REMBOURSEMENT INTÉGRAL",
+            "url": ""
+          }
+        },
+        "message_Vt64NJ": {
+          "type": "message",
+          "settings": {
+            "text": "LIVRAISON GRATUITE DANS TOUTE LA FRANCE",
+            "url": ""
+          }
+        },
         "message": {
           "type": "message",
           "settings": {
-            "text": "Announce something here"
+            "text": "100% PAIEMENT SÉCURISÉ",
+            "url": ""
           }
         }
       },
       "block_order": [
+        "message_4A7kKT",
+        "message_FBMJPm",
+        "message_Vt64NJ",
         "message"
       ],
       "settings": {
         "enable_sticky": false,
+        "autoplay": false,
+        "cycle_speed": 6,
         "text_size": "text-xs",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
-        "background": "#1a1a1a",
-        "text_color": "#ffffff"
+        "background": "#b1e2dd",
+        "background_gradient": "",
+        "text_color": "#000000"
       }
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".header {background-color: #ffffff; padding-top: 0px; padding-bottom: 0px; color: #ffffff;}",
+        ".header a {color: #000000;}"
+      ],
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "{{shop.brand.logo}}",
-        "logo_max_width": 120,
-        "logo_mobile_max_width": 100,
+        "logo": "shopify://shop_images/LOGO_NORYSIA.png",
+        "logo_max_width": 220,
+        "logo_mobile_max_width": 155,
         "menu": "main-menu",
+        "sidebar_menu": "",
+        "secondary_menu": "",
         "menu_open_trigger": "click",
         "opening_from": "bottom",
-        "layout": "logo_left_navigation_center",
+        "layout": "logo_center_navigation_inline",
         "show_social_media": true,
+        "show_locale_selector": true,
+        "show_country_selector": true,
         "show_country_flag": true,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
         "reduce_padding": false,
-        "background_opacity": 100,
+        "background_opacity": 0,
         "background_blur_radius": 0
       }
     }
