@@ -341,7 +341,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/ChatGPT_Image_10_mai_2026_00_21_20.png",
+        "image": "shopify://shop_images/hf_20260509_211217_409864bf-7f12-4877-ad3a-bd608fd5a715.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -358,6 +358,7 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify://shop_images/ChatGPT_Image_10_mai_2026_00_23_30.png",
+        "mobile_image": "shopify://shop_images/hf_20260509_221815_8da9cbd4-889d-4d46-b8ca-faffb8efc098.png",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -426,6 +427,59 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "1779219576ca6ae4d1": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d471b1e_naXiN3": {
+          "type": "ai_gen_block_d471b1e",
+          "settings": {
+            "main_title": "QUEL PROBLÈME SOUHAITEZ-VOUS RÉSOUDRE ?",
+            "title_color": "#111111",
+            "section_background": "#FFFFFF",
+            "tab_background": "#FFFFFF",
+            "tab_text_color": "#111111",
+            "tab_border_color": "#E5E5E5",
+            "tab_hover_background": "#F5F5F5",
+            "tab_active_background": "#2F4F4F",
+            "tab_active_text_color": "#FFFFFF",
+            "content_background": "#FAFAFA",
+            "content_border_radius": 16,
+            "testimonial_title_color": "#111111",
+            "testimonial_text_color": "#333333",
+            "testimonial_author_color": "#666666",
+            "cta_text": "FILTRER MON EAU",
+            "cta_link": "",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d471b1e_naXiN3"
+      ],
+      "settings": {}
+    },
+    "1779220080145d22c3": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_df7e186_AzNaY7": {
+          "type": "ai_gen_block_df7e186",
+          "settings": {
+            "title": "LE FILTRE APRÈS 3 MOIS",
+            "subtitle": "Faites glisser et constatez la différence au niveau du filtre après 3 mois d'utilisation continue avec NORYSIA™.",
+            "image_before": "shopify://shop_images/gempages_561627211774297080-cc7e6a46-604e-4a11-8be3-34a06339b19e_1b41d3bc-c0a1-4088-9797-7b2cda756dd6.png",
+            "image_after": "shopify://shop_images/gempages_561627211774297080-9cd53443-f16c-4efb-af09-24feff01a229_1_dfe46ec8-9eb1-4348-ab96-2f031e2076e2.webp",
+            "label_before": "Filtre sale",
+            "label_after": "Filtre propre"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_df7e186_AzNaY7"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -435,6 +489,8 @@
     "scrolling_text_GyYxfc",
     "image_with_text_overlay_JRVmg8",
     "image_with_text_overlay_xUfxNA",
-    "multi_column_b7p3KX"
+    "multi_column_b7p3KX",
+    "1779219576ca6ae4d1",
+    "1779220080145d22c3"
   ]
 }
